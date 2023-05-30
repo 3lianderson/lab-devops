@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  gather_facts: True
+  tasks:
+  - name: creating ec2
+    ec2:
+      aws_access_key: AKIA4DVA5REKIHRZ3DNL 
+      aws_secret_key: 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
+      region: us-east-1
+      key_name: eli_k8s     
+      instance_type: t2.micro
+      image: ami-0261755bbcb8c4a84
+      wait: yes
+      group: default
+      count: 1
+      vpc_subnet_id: subnet-018934fa4ce6e6bc5
+      assign_public_ip: yes
