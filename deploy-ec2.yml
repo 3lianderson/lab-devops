@@ -4,8 +4,8 @@
   tasks:
   - name: creating ec2
     ec2:
-      aws_access_key: AKIA4DVA5REKIHRZ3DNL 
-      aws_secret_key: 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
+      aws_access_key: AKIA3T4J3VKYSROOBOEQ 
+      aws_secret_key: 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
       region: us-east-1
       key_name: eli_k8s     
       instance_type: t2.micro
